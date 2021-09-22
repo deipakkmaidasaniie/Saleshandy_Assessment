@@ -1,0 +1,74 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffb830;
+  overflow: hidden;
+}
+
+.container {
+  padding: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.output {
+  outline: none;
+  border: none;
+  background-color: #fff;
+  /* padding: 5px; */
+  color: #000;
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 20px 0;
+  font-family: "Exo", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.keypad-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.keypad-row {
+  min-width: 250px;
+  display: flex;
+  align-items: stretch;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  width: 120px;
+  height: 60px;
+  padding: 5px 0;
+  transition: all 100ms ease-in;
+  user-select: none;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+.btn:active {
+  transform: scale(1.1);
+}
+
+.btn-text {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Exo", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn-subtext {
+  color: #777;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
